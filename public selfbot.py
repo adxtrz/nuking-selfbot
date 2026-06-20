@@ -165,7 +165,7 @@ async def massban(ctx):
     for m in membs:
         if m != ctx.author:
             try:
-                await m.ban(reason="being retarded")
+                await m.ban(reason="test")
             except:
                 pass
 
